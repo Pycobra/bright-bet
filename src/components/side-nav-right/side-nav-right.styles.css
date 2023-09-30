@@ -1,0 +1,244 @@
+#side-nav-right{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: var(--mask);
+}
+#side-nav-right .container.main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    align-content: flex-start;
+    background: var(--major);
+}
+#side-nav-right .s-nav__item{
+    font-size: 11px;
+}
+
+#side-nav-right .header{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    color:var(--default);
+    padding: 12px 0 0 0;
+}
+
+#side-nav-right .header .content{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
+#side-nav-right .header .content{
+    padding: 0 30px;
+}
+#side-nav-right .header{
+    border-bottom: .2px solid var(--normal);
+    font-size: 16px;
+}
+#side-nav-right .header .s-nav__head-text{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+#side-nav-right .header .s-nav__head-text .bet-total{
+    padding: 3px 6px;
+    background-color: #78715a;
+    color: var(--default);
+    position: absolute;
+    top: -8px;
+    right:-15px;
+    font-size: 10px;
+    border-radius: 20px;
+}
+#side-nav-right .header .s-nav__head-text.active 
+.btm-pallete{
+    background: var(--header-color);
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+#side-nav-right .header .s-nav__head-text.active {
+    color: var(--yellow);
+}
+
+
+
+#side-nav-right .s-nav__item:nth-child(2){
+    border-radius: 10px 10px 0 0;
+}
+#side-nav-right .s-nav__item:nth-child(2){
+    display: grid;
+}
+#side-nav-right .s-nav__item:nth-child(2) 
+.content.hide-content{
+    display: grid;
+}
+#side-nav-right .s-nav__item:nth-child(2){
+    background: var(--other-gray);
+    padding: 20px 20px 0 20px;
+}
+#side-nav-right .s-nav__item:nth-child(2) 
+.s-nav__item-row.u{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-gap: 7px;
+}
+#side-nav-right .s-nav__item:nth-child(2) 
+.s-nav__item-row.form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 7px;
+}
+#side-nav-right .s-nav__item:nth-child(2) .s-nav__item-row.u span{
+    text-align: center;
+}
+#side-nav-right .s-nav__item:nth-child(2) .s-nav__item-row.u span:last-child{
+    text-align: center;
+}
+#side-nav-right .s-nav__item:nth-child(2)  .s-nav__item-row span:nth-child(1){
+    color: var(--default);
+}
+#side-nav-right .s-nav__item:nth-child(2)  .s-nav__item-row span:nth-child(2){
+    color: var(--pale-gray);
+}
+#side-nav-right .s-nav__item:nth-child(2) .s-nav__item-row{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 7px;
+    margin-bottom: 30px;
+}
+#side-nav-right .s-nav__item:nth-child(2) form{
+    display: grid;
+    grid-template-columns: auto 32%;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+
+#side-nav-right .s-nav__item:nth-child(3){
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: var(--other-gray);
+}
+
+#side-nav-right .s-nav__item:nth-child(4){
+    background-color: var(--major);
+    padding: 5px;
+    color: var(--default);
+}
+
+
+
+
+#side-nav-right .side-nav-right__footer-row-1{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: var(--black);
+    padding: 10px 0;
+}
+#side-nav-right .side-nav-right__footer-row-1 .color-break{
+    height: 20px;
+    background: var(--header-color);
+}
+
+
+
+#side-nav-right .side-nav-right__footer-row-2{
+    background-color: var(--black);
+    color: var(--black);
+}
+#side-nav-right .side-nav-right__footer-row-2 .img-holder{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+#side-nav-right .side-nav-right__footer-row-2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+#side-nav-right .side-nav-right__footer-row-2 .nav-icon{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: auto;
+    border-bottom: 3px solid var(--black);
+    background-color: var(--major);
+}
+#side-nav-right .side-nav-right__footer-row-2 .nav-icon div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    border-right: 3px solid var(--black);
+    border-left: 3px solid var(--black);
+}
+#side-nav-right .side-nav-right__footer-row-2 .nav-icon .icon{
+    padding: 10px;
+}
+#side-nav-right .side-nav-right__footer-row-2 .nav-icon div .icon{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 20px;
+}
+
+
+
+
+@keyframes slideScaleOpen {
+    from {transform: srgb(5, 6, 5)(0);}
+    to {transform: scaleY(1);}
+}
+@keyframes slideScaleClose {
+    from {transform: scaleY(1);}
+    to {transform: scaleY(0);}
+}
+
+@media screen and (max-width:768px){
+    #side-nav-right{
+        border: 2px solid var(--normal);
+        padding-left: 5px;
+        overflow-y: scroll;
+        background-color: var(--major);
+    }
+    #side-nav-right.adjust{
+        border:none;
+        padding: 5px;
+        background-color: var(--normal); 
+        overflow-y: hidden;
+    }
+    #side-nav-right .s-nav__item:nth-child(2){
+        padding: 30px 10px 0 10px;
+    }
+    #side-nav-right .s-nav__head .s-nav__head-row:first-child{
+        font-size: 16px;
+    }
+    #side-nav-right .s-nav__head-row:nth-child(4) .s-nav__head-col:last-child{
+         font-size: 16px;
+    }
+    #side-nav-right .container.main{
+        border-radius: 20px 20px 0 0;
+        padding: 20px;
+    }
+    #side-nav-right .container.main.adjust{
+        background: var(--pale-gray);
+    }
+    #side-nav-right footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:540px){
+    #side-nav-right {
+        display: none;
+    }
+}

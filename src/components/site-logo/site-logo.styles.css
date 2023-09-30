@@ -1,0 +1,44 @@
+
+.site-logo{
+    color: #000;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+.site-logo a{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+}
+.site-logo a span:first-child{
+    padding: 5px;
+    background-color: var(--green);
+    border-radius: 100px;
+    padding-right: 20px;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+.site-logo a span:last-child{
+    padding: 5px;
+    color: var(--green);
+    position: absolute;
+    top:-5px;
+    left: 85px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+@media screen and (max-width:540px){
+    .site-logo a{
+        font-size: 15px;
+    }
+    .site-logo a span:last-child{
+        left: 60px;
+    }
+}
+@media screen and (max-width:375px){
+    .site-logo a{
+        font-size: 13px;
+    }
+}

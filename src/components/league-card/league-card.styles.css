@@ -1,0 +1,337 @@
+#league-card {
+  display: grid;
+  grid-template-columns: auto;
+  margin-bottom: 50px;
+  font-size: 11px;
+}
+#league-card .league-card__wrap{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-content: space-between;
+}
+#league-card .league-card__item:nth-child(1) {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  overflow: hidden;
+}
+#league-card .l-card__list{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  grid-gap: 2px;
+  color: var(--white);
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+#league-card .l-card__list .l-card__list-item{
+  background: var(--major);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#league-card .l-card__list .l-card__list-item.active-span{
+  color: var(--yellow);
+}
+#league-card .l-card__list .l-card__list-item:hover{
+  background-color: #474646;;
+}
+
+
+
+#league-card .league-card__item:nth-child(2) {
+  display: grid;
+  grid-template-columns: auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#league-card__main-content .l-c-item,
+#league-card__main-content .l-c-item__table-item{ 
+  padding: 10px 20px;
+}
+
+#league-card__main-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  color: var(--default);
+}
+#league-card__main-content .container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+#league-card__main-content .l-c-item__wrap{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+
+#league-card__main-content .l-c-item:nth-child(1){
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  background-color: #544f4fca;
+}
+#league-card__main-content .l-c-item__wrap .l-c-item__head{
+  display: flex;
+  justify-content: space-between;
+}
+#league-card__main-content .l-c-item__head span{
+  letter-spacing: .5px;
+  color: var(--default)
+}
+#league-card__main-content .l-c-item__head span:nth-child(2){
+  font-size: 11px;
+}
+
+
+
+#league-card__main-content .l-c-item:nth-child(2){
+  background-color: #625d5dca;
+}
+#league-card__main-content .l-c-item:nth-child(2) .l-c-item__head {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+#league-card__main-content .l-c-item:nth-child(2) .l-c-item__head .col{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  align-content: center;
+}
+#league-card__main-content .l-c-item:nth-child(2) .l-c-item__head .col:nth-child(2){
+  grid-template-columns: auto auto;
+}
+#league-card__main-content .l-c-item:nth-child(2) .col span{
+}
+#league-card__main-content .l-c-item:nth-child(2) .col:first-child span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+#league-card__main-content .l-c-item span.active-span{
+  background-color: #78715a;
+  padding: 5px 15px;
+}
+
+#league-card__main-content .l-c-item span:hover{
+  color: var(--pale-gray);
+}
+
+
+#league-card__main-content .l-c-item:nth-child(3){
+  background-color: #625d5dca;
+  padding: 10px;
+}
+#league-card__main-content .l-c-item:nth-child(3) .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#league-card__main-content .l-c-item:nth-child(3) .content span{
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
+
+#league-card__main-content .l-c-item:nth-child(4){
+  background-color: #625d5dca;
+  border-bottom: 1px solid var(--major);
+  padding: 0;
+}
+#league-card__main-content .l-c-item:nth-child(4) .content{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 1px;
+  background-color: var(--major);
+}
+#league-card__main-content .l-c-item:nth-child(4) .content span{
+  padding: 10px 5px;
+  text-align: center;
+  background-color: #625d5dca;
+}
+#league-card__main-content .l-c-item:nth-child(4) .content span.active-span{
+  color: var(--yellow);
+}
+#league-card__main-content .l-c-item:nth-child(4) .content span:hover{
+  color: var(--pale-gray);
+}
+
+
+#league-card__main-content .l-c-item:nth-child(5){
+  background-color: var(--normal); 
+  background: var(--head-color);
+}
+#league-card__main-content .l-c-item__wrap .l-c-item__head-1{
+  display: flex;
+  justify-content: space-between;
+}
+#league-card__main-content .l-c-item__head-1 span{
+  letter-spacing: .5px;
+  color: var(--default)
+}
+#league-card__main-content .l-c-item__head-1 span:nth-child(2){
+  font-size: 11px;
+}
+
+
+
+#league-card__main-content .l-c-item:nth-child(6) {
+  background-color: var(--mask);
+  padding: 0;
+}
+#league-card__main-content .l-c-item__table-betting-wrap{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto; 
+}
+#league-card__main-content .l-c-item__table-item{
+  background-color: var(--mask);
+}
+#league-card__main-content .l-c-item__table-item:nth-child(1) .content{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  grid-gap: 20px;
+}
+#league-card__main-content .content .content-odd__title{
+  display: grid;
+  grid-template-columns: 135px 135px;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  justify-content: space-between;
+}
+#league-card__main-content .content .content-odd__title.one{
+  display: grid;
+  grid-template-columns: 378px;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  justify-content: space-between;
+}
+#league-card__main-content .content .content-odd__title.two{
+  display: grid;
+  grid-template-columns: 135px 135px;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  justify-content: space-between;
+}
+#league-card__main-content .content-odd__head {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  justify-content: space-between;
+}
+#league-card__main-content .content-odd__head .content-odd__head-col {
+  display: grid;
+  grid-template-columns: 45px 45px 45px;
+  grid-template-rows: auto;
+}
+#league-card__main-content .l-c-item__table-item:nth-child(1) .content span{
+  text-align: center;
+  color: var(--default)
+}
+#league-card__main-content .l-c-item__table-item:nth-child(1){
+  border-bottom: .2px solid var(--normal);
+}
+#league-card__main-content .l-c-item__table-item:last-child {
+  padding: 0;
+  background-color: var(--mask);
+}
+
+#league-card__main-content .l-c-item__table-item:last-child.empty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: var(--major);
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+  #league-card .league-card__item:nth-child(1) {
+    margin-bottom: 0;
+  }
+  #league-card .l-card__list{
+    display: none;
+  }
+  #league-card__main-content .content .content-odd__title{
+    grid-template-columns: 93px 93px;
+  }
+  #league-card__main-content .content .content-odd__title.one{
+    grid-template-columns: 186px;
+  }
+  #league-card__main-content .content .content-odd__title.two{
+    grid-template-columns: 93px 93px;
+  }
+  #league-card__main-content .content-odd__head .content-odd__head-col {
+    grid-template-columns: 33px 33px 33px;
+  }
+  #league-card__main-content .l-c-item:nth-child(4) .content span{
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width:540px){
+    #league-card {
+        font-size: 10px;
+    }
+    #league-card .l-card__list{
+      width: 100%;
+    }
+}
+@media screen and (max-width:414px){
+  #league-card__main-content .content-odd__head .content-odd__head-col {
+    grid-template-columns: 30px 30px 30px;
+  }
+  #league-card__main-content .content .content-odd__title{
+    width: 180px;
+  }
+  #league-card__main-content .content .content-odd__title.one{
+    grid-template-columns: 180px;
+  }
+  #league-card__main-content .content .content-odd__title.two{
+    grid-template-columns: 90px 90px;
+  }
+  #league-card {
+      font-size: 8px;
+  }
+}

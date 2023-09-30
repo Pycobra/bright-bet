@@ -1,0 +1,149 @@
+.transaction,
+.transaction__wrap,
+.transaction-table,
+.transaction-table__item{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+td,th,tr,table{
+    padding: 0;
+    margin: 0;
+}
+.transaction{
+    padding: 15px;
+}
+.transaction-table{
+    padding: 15px;
+    background: var(--light-gray);
+}
+.transaction__wrap{
+}
+.transaction-table__item{
+    display: grid;
+    grid-template-columns: auto;
+}
+.transaction-table__item ul li{
+    display: grid;
+    text-align: center;
+}
+
+
+.transaction-table__item.head{
+    display: grid;
+    grid-template-columns: auto;
+    border-bottom: 1px solid var(--brown7);
+    font-size: 14px;
+    overflow-x: auto;
+}
+.transaction-table__item.head ul{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    border-bottom: 1px solid var(--brown7);
+    font-size: 14px;
+}
+.transaction-table__item.head li{
+    padding: 10px;
+}
+.transaction-table__item.head li.active{
+    border-bottom: 3px solid var(--green);
+}
+.transaction-table__item:nth-child(2){
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction-table__item:nth-child(2) .svg-inline--fa{
+    font-size: 20px;
+    color: var(--brown16);
+    margin: 0 10px;
+}
+.transaction-table__item:nth-child(2) span{
+    font-size: 13px;
+}
+.transaction-table__item:nth-child(2) h2{
+    font-size: 12px;
+    color: var(--);
+    background: #e9e9e9;
+    padding: 10px;
+}
+
+
+
+.transaction-table__item:last-child{
+    overflow-x: auto;
+    /* width: 200px; */
+}
+.transaction-table table{
+    gap: 5px;
+    overflow-x: auto;
+}
+.transaction-table table tr{
+    display: grid;
+    border: 1px solid var(--brown8);
+    background: var(--brown3);
+    grid-template-columns: 15% 80px 20% 50px auto auto 40px;
+    gap: 10px;
+}
+
+
+.transaction-table table tr td,
+.transaction-table table tr th{
+    padding: 10px 0;
+    text-align: center;
+}
+.transaction-table table tr.head{
+    background: var(--brown24);
+    color: var(--default);
+}
+.transaction-table table{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 3px;
+    font-size: 11px;
+}
+.transaction-table table tr td .svg-inline--fa{
+    font-size: 14px;
+    color: var(--brown16);
+}
+
+
+.transaction-table table .msg{
+    display: grid;
+    grid-template-columns: auto;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid var(--brown4); */
+}
+.transaction-table table .msg td{
+    color: var(--pale-gray);
+    font-size: 17px;
+}
+
+
+@media screen and (max-width:600px){
+
+    .transaction-table__item:nth-child(2){
+        height: 60px;
+    }
+    .transaction-table__item:nth-child(2) span{
+        font-size: 10px;
+    }
+    .transaction-table table{
+        font-size: 10px;
+    }
+    .transaction-table__item:nth-child(2) h2{
+        font-size: 11px;
+        width: 42%;
+    }
+    .transaction-table__item ul{
+        grid-template-columns: 70px 70px 70px 70px 70px 70px 40px;
+    }
+    .transaction-table table tr{
+        grid-template-columns: 70px 70px 70px 70px 70px 70px 40px;
+    }
+}
+

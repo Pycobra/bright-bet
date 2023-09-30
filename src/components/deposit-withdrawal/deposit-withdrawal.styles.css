@@ -1,0 +1,197 @@
+.banking{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 50px 0;
+    background-color: var(--default);
+    position: relative;
+}
+
+.banking__wrap{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+.banking__item{
+    display: grid;
+    grid-template-columns: auto;
+    background: var(--brown1);
+    padding: 20px;
+}
+.banking__item .banking__item-row{
+    display: grid;
+}
+.banking__item .banking__item-row:not(.banking__item-row:nth-child(3)){
+    margin-bottom: 30px;
+}
+.banking__item .banking__item-row:first-child{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 0 5px;
+    gap: 20px;
+}
+.banking__item .banking__item-row:first-child .banking__item-row__item:last-child h1,
+.banking__item .banking__item-row:first-child .banking__item-row__item:last-child h2{
+    display: grid;
+    text-align: center;
+    background: transparent;
+    font-size: 10px;
+}
+.banking__item .banking__item-row:first-child h1{
+    font-size: 14px;
+}
+.banking__item .banking__item-row:first-child h2{
+    font-size: 12px;
+    background-color: var(--brown5);
+    color: var(--gray);
+    padding: 5px;
+}
+
+
+.banking__item .banking__item-row:nth-child(2){
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    justify-content: center;
+}
+.banking__item .banking__item-row:nth-child(2) .banking__item-row__item:first-child{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-content: center;
+}
+.banking__item .banking__item-row:nth-child(2) .banking__item-row__item:nth-child(2){
+    display: grid;
+    align-items: end;
+    grid-template-columns: 8% auto;
+    gap: 5px;
+    background: var(--brown7);
+    padding: 5px;
+    border-radius: 5px;
+}
+.banking__item .banking__item-row:nth-child(2) .banking__item-row__item.active{
+    border: 1px solid red;
+}
+.banking__item .banking__item-row:nth-child(2) .banking__item-row__item:nth-child(2)
+.text{
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.banking__item .banking__item-row:nth-child(2) .banking__item-row__item:nth-child(2)
+.msg{
+    font-size: 10px;
+    color: red;
+    text-align: center;
+}
+.banking__item .banking__item-row:nth-child(2) .banking__item-row__item:nth-child(2)
+input{
+    height: 30px; 
+    padding: 0 5px; 
+    width: 95%;
+    outline: none;
+    
+}
+.banking__item .banking__item-row:nth-child(2) button{
+    background-color: #74af91;
+    border: none;
+    padding: 10px 20px;
+}
+
+
+.banking__item .banking__item-row:nth-child(3){
+    display: grid;
+    width: 100%;
+    justify-self: center;
+    background-color: var(--gray);
+}
+.banking__item .banking__item-row:nth-child(3) .msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    padding: 10px;
+}
+.banking__item .banking__item-row:nth-child(3) .msg.active{
+    background-color: #74af91;
+}
+
+.banking__item .banking__item-row:last-child{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    height: 60vh;
+    overflow-y: auto;
+    position: relative;
+    background-color: var(--brown3);
+}
+.banking__item .banking__item-row:last-child h2{
+    font-size: 14px;
+    background-color: var(--brown7);
+    padding: 5px;
+}
+.banking form{
+    display: grid;
+    grid-template-columns: auto;
+    background: var(--default);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+}
+.banking__item form h3{
+    text-align: center;
+    font-size: 14px;
+    color: var(--gray);
+    font-weight: 100;
+}
+.banking form .body{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 5px;
+    background: linear-gradient(to right, #2a3e34, rgb(255, 255, 255), #2a3e34);
+}
+
+.banking form .img-block{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.banking form .paystack-img{
+    background-color: white;
+}
+.banking form .flutterwave-img{
+    background-color: white;
+}
+.banking form .paystack-img img{
+    height: 100px;
+    width: 170px;
+    object-fit: cover;
+}
+.banking form .flutterwave-img img{
+    height: 35px;
+    width: 170px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+    .banking{
+        padding: 20px 0;
+    }
+    .banking form .paystack-img img {
+        height: 100px;
+        width: 110px;
+    }
+    .banking form .flutterwave-img img {
+        height: 28px;
+        width: 122px;
+    }
+}

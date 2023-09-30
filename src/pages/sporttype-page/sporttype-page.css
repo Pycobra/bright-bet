@@ -1,0 +1,9 @@
+.sporttype-page{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.sporttype-page__wrap{
+  display: flex;
+  flex-direction: column-reverse;
+}

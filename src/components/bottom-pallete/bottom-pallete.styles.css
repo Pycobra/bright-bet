@@ -1,0 +1,117 @@
+#bottom-pallete{
+  width: 100%;
+  display: none;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index:2;
+  border: 1px solid var(--brown25);
+}
+#bottom-pallete #new-element2{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  height: 70vh;
+  background-color: var(--mask);
+  overflow-y: scroll;
+  padding: 0 20px;
+}
+#bottom-pallete #new-element2 .cancel{
+  text-align: center;
+  background-color: var(--normal);
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--white);
+  border-radius: 20px 20px 0 0;
+}
+#bottom-pallete .b-p__wrap{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  z-index:0;
+  position: relative;
+}
+#bottom-pallete .b-p__wrap .b-p__block:last-child{
+  display: grid;
+  grid-template-columns: auto;
+  position: absolute;
+  bottom: 57px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+#bottom-pallete .b-p__wrap .b-p__block:first-child{
+  display: grid;
+  grid-template-columns: auto;
+  z-index: 1;
+}
+#bottom-pallete .b-p__list {
+    display: grid;
+    grid-template-columns: 20% 20% 19% 21% 20%;
+    grid-template-rows: auto;
+}
+#bottom-pallete .b-p__list-item{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  background-color: var(--mask);
+  justify-content: center;
+  align-content: end;
+  padding: 10px;
+  color: var(--disabled);
+}
+#bottom-pallete .b-p__list-item.active span,
+#bottom-pallete .b-p__list-item.active .svg-inline--fa{
+  color: var(--brown16);
+  font-weight: 900;
+}
+#bottom-pallete .b-p__list-item span{
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+#bottom-pallete .b-p__list-item:nth-child(3){
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  position: relative;
+  overflow: visible;
+}
+#bottom-pallete .b-p__list-item:nth-child(3) .wrap{
+  background: orange;
+  color: var(--white);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 90px;
+  border-radius: 30px 30px 0 0;
+  padding-top: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#bottom-pallete .b-p__list-item:nth-child(3) .wrap span:nth-child(3){
+}
+
+
+
+@media screen and (max-width:768px){
+  #bottom-pallete{
+    display: grid;
+  }
+}
+@media screen and (max-width:540px){
+  #bottom-pallete .b-p__list-item span{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:414px){
+  #bottom-pallete{
+    font-size: 12px;
+  }
+}

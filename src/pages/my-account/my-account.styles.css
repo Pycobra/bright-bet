@@ -1,0 +1,4 @@
+.my-account{
+    display: grid;
+    background: var(--default);
+}

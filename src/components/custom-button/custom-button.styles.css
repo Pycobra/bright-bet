@@ -1,0 +1,132 @@
+.custom-button {
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    border-radius:50px;
+    font-size:.7rem;
+    font-weight:normal;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed';
+    color:var(--normalwhite);
+    position: relative;
+    /* z-index: 1; */
+}
+.custom-button.major-btn{
+  height:55px;
+  width: 100%;
+  margin: 0;
+  border-radius:0;
+  border: none;
+  color: var(--black);
+  background-color:var(--default);
+}
+.custom-button.major-btn.active{
+  color: var(--default);
+  background-color:var(--red);
+}
+.custom-button.major-btn.register{
+  height:35px;
+  width: 100%;
+  margin: 0;
+  border-radius:30px;
+  border: none;
+  background-color: var(--green2);
+  color: var(--disabled);
+  border: 1px solid var(--brown20);
+}
+
+
+.flat-button{
+  height:30px;
+  width: 100%;
+  padding: 3px;
+  border-radius:2px;
+  box-shadow:2px 2px 12px rgba(0,0,0,0.9);
+  background-color:var(--mask);
+  color: var(--black);
+  background: var(--button-color);
+  border: none;
+  transition: background 10s ease-in;
+}
+
+.trigger-btn {
+  padding: 18px 9px;
+  /* width: 120px; */
+  height: 0;
+  border: none;
+  font-size: 11px;
+  background: var(--brown27);
+  color: var(--disabled);
+}
+.trigger-btn:hover {
+  background-color: var(--green2);
+  border: 1px solid var(--brown11);
+}
+
+.custom-button.my-bet-btn{
+  position: relative;
+}
+.custom-button.my-bet-btn,
+.custom-button.my-bet-btn2{
+  width: 100%;
+  margin: 0;
+  border-radius:0;
+  border: none;
+  color: var(--white);
+  font-weight:bold;
+  background-color:var(--major);
+}
+
+.custom-button.my-bet-btn2{
+  color: var(--major);
+  background-color:var(--disabled);
+  height:30px;
+  padding:0 5px; 
+  border-radius:2px;
+  font-size: 13px;
+}
+.custom-button.my-bet-btn2:first-child{
+  padding:0 80%;
+}
+.custom-button.my-bet-btn.active,
+.custom-button.my-bet-btn2.active{
+  color: var(--yellow);
+  /* background-color:var(--major); */
+  background-color:var(--mask);
+}
+.custom-button.my-bet-btn2.active{
+  color: var(--yellow);
+  background-color:#625d5dca;
+}
+
+
+.custom-button.circle-type,
+.custom-button.circle-type2{
+  height:40px;
+  width: 40px;
+  color: var(--site-green);
+  border:1px solid white;
+  background-color: transparent;
+}
+
+
+
+@media screen and (max-width:600px){
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

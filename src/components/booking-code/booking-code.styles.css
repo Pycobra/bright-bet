@@ -1,0 +1,265 @@
+#booking-code {
+  display: grid;
+  background-color: rgba(0,0,0,.8);
+  font-size: 11px;
+}
+#booking-code .booking-code-wrap{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #322f2f80;
+}
+
+#booking-code .cancel{
+  position: absolute;
+  font-size: 15px;
+  top: 0;
+  right: 0px;
+  padding: 0 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+#booking-code .cancel:hover{
+  transform: rotate(90deg);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =4============================ */
+#booking-code .booking-code-wrap .container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  color: var(--default);
+}
+#booking-code .booking-code-wrap .booking-code-row{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(1) 
+.container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 2px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--header-color);
+  padding: 12px;
+  gap: 50px;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(1) 
+.container div{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  color: var(--black);
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(2){
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  padding: 0 20px;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(2) 
+.container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 5px;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(2) 
+.container .booking-c-row__item:first-child{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 5px;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(2) 
+.container .booking-c-row__item:first-child p{
+  text-align: center;
+}
+
+#booking-code .booking-code-wrap .booking-code-row:nth-child(2) 
+.container .booking-c-row__item:first-child p:last-child{
+  font-size: 10px;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(2) 
+.container .booking-c-row__item:last-child{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  padding: 5px 10px;
+  gap: 5px;
+  background-color: rgba(0,0,0,.5);
+  border-bottom: 2px solid var(--green);
+  border-top: 1px solid var(--brown26);
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(2) 
+.container .booking-c-row__item:last-child .row-1,
+#booking-code .booking-code-wrap .booking-code-row:nth-child(2) 
+.container .booking-c-row__item:last-child .row-2{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  background-color: var(--default);
+  color: var(--black);
+  margin: 0 12px 12px 12px;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:first-child{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:first-child div{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  padding: 3px 12px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:first-child div:first-child,
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:first-child div:last-child{
+  background-color: var(--green);
+  color: var(--black);
+  width: 100%;
+  font-weight: normal;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:nth-child(2){
+  display: grid;
+  grid-template-columns: auto;
+  padding: 3px 12px;
+  margin-top: 10px;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:nth-child(2) ul{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 15px;
+  overflow-y: scroll;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:nth-child(2) ul li div{
+  margin-bottom: 3px;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:nth-child(2) ul li .line-1{
+  display: flex;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  font-weight: bold;
+}
+#booking-code .booking-code-wrap .booking-code-row:nth-child(3) 
+.container .game-row:nth-child(2) ul li .line-3{
+}
+
+
+
+#booking-code .booking-code-wrap .booking-code-row.succesfull{
+  background-color: var(--default);
+  grid-gap: 0;
+}
+#booking-code .booking-code-wrap .booking-code-row.succesfull 
+.container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-content: center;
+  gap: 20px;
+  color: var(--black);
+  padding: 20px 0;
+}
+#booking-code .booking-code-wrap .booking-code-row.succesfull 
+.check-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 15px;
+  width: 20px;
+  background-color: green;
+  border-radius: 100px;
+  color: var(--white);
+}
+#booking-code .booking-code-wrap .booking-code-row.succesfull 
+.container .main {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 15px;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 2px solid var(--green);
+  border-bottom: 2px solid var(--green);
+  border-collapse: collapse;
+}
+#booking-code .booking-code-wrap .booking-code-row.succesfull 
+.container .main div{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+}
+#booking-code .booking-code-wrap .booking-code-row.succesfull 
+.container .main div span:nth-child(2){
+  font-weight:bold;
+}
+#booking-code .booking-code-wrap .booking-code-row.succesfull 
+.container .view-bet{
+  color: green;
+}
+#booking-code .booking-code-wrap .booking-code-row.succesfull 
+.container .view-bet span:first-child{
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

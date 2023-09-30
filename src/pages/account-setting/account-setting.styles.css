@@ -1,0 +1,86 @@
+.account-setting{
+    display: grid;
+    padding: 50px 20px;
+    background: var(--default);
+}
+.account-setting .success{
+    width: fit-content;
+    padding: 25px 20px;
+    background: aliceblue;
+    position: absolute;
+    top: -80px;
+    right: 20px;
+    animation: slideDownAccSetting 3s ease-in-out 1;
+}   
+@keyframes slideDownAccSetting {
+    1% {transform: translateY(0);}
+    90%  {transform: translateY(100px);}
+    100%  {transform: translateY(-80px);}
+}
+.account-setting__wrap,
+.account-s__wrap-body{
+    display: grid;
+    grid-template-columns: auto;
+}
+.account-setting__wrap{
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+}
+.account-setting__wrap .head-place{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+}
+.account-setting__wrap h1{
+    font-size: 22px;
+    text-align: center;
+}
+.account-s__wrap-col{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 50px;
+}
+.account-s__wrap-col .account-s__wrap-item{
+    display: grid;
+    padding: 50px;
+    background: var(--light-gray);
+    border: 1px solid var(--pale-gray);
+}
+.account-s__wrap-col .account-s__wrap-item .head{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.account-s__wrap-col .account-s__wrap-item form,
+.account-s__wrap-col .account-s__wrap-item form .field-b{
+    display: grid;
+    gap: 10px;
+}
+.account-s__wrap-col .account-s__wrap-item form .field{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} 
+.account-s__wrap-col .account-s__wrap-item form .msg{
+    text-align: center;
+    font-size: 13px;
+    color: var(--red);
+}
+.account-s__wrap-col .account-s__wrap-item h2{ 
+    font-size: 16px;
+    color: var(--normal);
+}
+
+
+
+@media screen and (max-width:600px){
+    .account-s__wrap-col .account-s__wrap-item{
+        padding: 20px;
+    }
+    .account-s__wrap-col {
+        grid-template-columns: auto;
+    }
+}

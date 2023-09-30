@@ -1,0 +1,333 @@
+.my-bet{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 3px 5px 3px 5px;
+    background-color: var(--default);
+}
+.my-bet .my-bet__body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding-top: 20px;
+}
+.my-bet .my-bet__body .my-bet__body-row:first-child{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 0 20px;
+}
+.my-bet .my-bet__body .my-bet__body-row:first-child 
+.header__btn-wrap{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.my-bet .my-bet__body .my-bet__body-row:first-child 
+.header__btn-wrap{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.my-bet .my-bet__body .my-bet__body-row:first-child 
+.header__btn-wrap .open-bet__total{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--default);
+    position: absolute;
+    top: 10%;
+    right:0;
+    font-size: 10px;
+    padding: 2px 4px 2px;
+    border-radius: 40px;
+    color: var(--default);
+}
+.my-bet .my-bet__body .my-bet__body-row:first-child 
+.header__btn-wrap .open-bet__total.active{
+    background-color:#78715a;
+    color: var(--white);
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(2){
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    border-bottom: 1px solid var(--brown11);
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(2) 
+.body__btn-wrap{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: start;
+    gap: 20px;
+    padding: 10px 10px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3){
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 10px 0 10px 8px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .head,
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__inner-list-items{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: baseline;
+    border-bottom: 1px solid var(--brown15);
+    padding: 5px 0;
+    font-size: 9px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__inner-list-items:last-child{
+    border-bottom: none;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li{
+    grid-template-columns: auto;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .li-wrap{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .li-wrap__main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 9px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1 span{
+    margin-left: 4px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-2{
+    color: var(--brown20);
+    text-decoration: underline;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap .my-bet__wrap-items{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    height: 35vh;
+    gap: 30px;
+    padding-right: 13px;
+    padding-bottom: 15vh;
+    overflow: auto;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap-items .empty-text{
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    color: var(--normal);
+    opacity: 0.5;
+    font-size: 12px;
+    margin: 50px 0;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap .my-bet__list-items{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 0 5px 10px;
+    border: 1px solid var(--brown15);
+    border-radius: 3px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap .my-bet__list-items ul{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap-btm{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    font-size: 10px;
+    color:var(--default)
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .hide{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-self: end;
+    align-items: center;
+    font-size: 9px;
+    color:var(--gray)
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap-btm .line-2{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 7px;
+    color: var(--brown17);
+}
+.my-bet .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap-btm .line-2 div{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+
+.my-bet__page .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1 span:last-child,
+.my-bet__page .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-3{
+    color: var(--black);
+}
+.my-bet__page .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1 .fa-futbol,
+.my-bet__page .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1 .odd,
+.my-bet__page .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1 .text,
+.my-bet__page .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-2{
+    color: var(--gray);
+}
+.my-bet__page .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap .my-bet__list-items .head{
+    color:var(--gray);
+}
+.my-bet__page .custom-button.my-bet-btn.active {
+    background-color: var(--default);
+    border-bottom: 4px solid var(--canal-green);
+}
+.my-bet__page .custom-button.my-bet-btn {
+    background-color: var(--default);
+    color: var(--normal);
+    border-bottom: 4px solid var(--default);
+}
+
+
+
+
+
+/* ======================FULL SCREEN====================================================================== */
+
+
+
+
+.my-bet__page.fullscreen-display .my-bet{
+    padding: 10px 10% 50px;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:first-child{
+    padding: 0;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:first-child{
+    justify-content: start;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:first-child 
+.header__btn-wrap{
+    gap: 30px;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3){
+    padding: 0;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(2) 
+.body__btn-wrap{
+    padding: 20px 0;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .head,
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__inner-list-items{
+    padding: 15px 30px;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .head,
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__inner-list-items,
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__inner-list-items .fixture-update,
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1{
+    font-size: 12px;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1{
+    gap: 7px;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1 .fa-futbol,
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1 .odd,
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-1 .text,
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap li .li-wrap .line-2{
+    font-weight: 900;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap .my-bet__wrap-items{
+    padding-right: 0;
+    height: auto;
+    overflow: unset;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap-items .empty-text{
+    font-size: 14px;
+}
+.my-bet__page.fullscreen-display .my-bet__body .my-bet__body-row:nth-child(3) 
+.body__btn-wrap .my-bet__wrap .my-bet__list-items .head{
+    font-weight:bold;
+    align-items:baseline;
+    padding: 15px 30px;
+}
+.my-bet__page.fullscreen-display .custom-button.my-bet-btn2,
+.my-bet__page.fullscreen-display .custom-button.my-bet-btn {
+    padding: 0 20px;
+}
+
+.my-bet__page.fullscreen-display .custom-button.my-bet-btn {
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

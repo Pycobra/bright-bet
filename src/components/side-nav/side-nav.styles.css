@@ -1,0 +1,38 @@
+#side-nav{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-content: start;
+    border-bottom: none;
+    overflow-y: hidden;
+    overflow-X: hidden;
+    border-top: 2px solid var(--site-black);
+    border-radius: 10px;
+}
+#side-nav.left-side{
+    border-radius: 30px 0 0 0;
+}
+#side-nav.right-side{
+    border-radius: 0 30px 0 0;
+}
+#side-nav.left-side .wrap{
+    padding: 20px 0 10px 0;
+    background-color: var(--major);
+}
+
+
+
+@keyframes slideScaleOpen {
+    from {transform: srgb(5, 6, 5)(0);}
+    to {transform: scaleY(1);}
+}
+@keyframes slideScaleClose {
+    from {transform: scaleY(1);}
+    to {transform: scaleY(0);}
+}
+
+@media screen and (max-width:768px){
+    #side-bar.reduce-height-for-btm-pallete{
+      height: 55vh;
+    }
+  }
