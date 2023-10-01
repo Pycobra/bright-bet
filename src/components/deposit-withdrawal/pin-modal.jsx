@@ -144,7 +144,7 @@ const PinModal = ({currentUser, removePinModal, paymentDetails}) => {
                         <div className="item">
                             {
                                 paymentPlatform==="Paystack" 
-                                ? <img  className="paystack" src={require(`../../Media/images/paystack/Paystack.png`)}/>    
+                                ? <img  className="paystack" src={require(`../../Media/images/paystack/paystack.png`)}/>    
                                 : <img  className="flutterwave" src={require(`../../Media/images/flutterwave/flutterwave.png`)}/>                                        
                             }
                             <div>

@@ -152,7 +152,7 @@ const DepositWithdrawal = ({currentUser, payment_options }) => {
                                         ? payment_options.map(i => 
                                             i.name === "Paystack" 
                                             ? <div key={i.name} className="img-block paystack-img">
-                                                <img  name={i.name} src={require(`../../Media/images/paystack/Paystack.png`)}/>
+                                                <img  name={i.name} src={require(`../../Media/images/paystack/paystack.png`)}/>
                                             </div>
                                             : i.name === "Flutterwave" 
                                             ? <div key={i.name} className="img-block flutterwave-img">
@@ -172,7 +172,7 @@ const DepositWithdrawal = ({currentUser, payment_options }) => {
                                         ? payment_options.map(i => 
                                             i.name === "Paystack" 
                                             ? <div key={i.name} className="img-block paystack-img">
-                                                <img  name={i.name} src={require(`../../Media/images/paystack/Paystack.png`)}/>
+                                                <img  name={i.name} src={require(`../../Media/images/paystack/paystack.png`)}/>
                                             </div>
                                             : i.name === "Flutterwave" 
                                             ? <div key={i.name} className="img-block flutterwave-img">
@@ -192,7 +192,7 @@ const DepositWithdrawal = ({currentUser, payment_options }) => {
                                         ? payment_options.map(i => 
                                             i.name === "Paystack" 
                                             ? <div key={i.name} className="img-block paystack-img">
-                                                <img  name={i.name} src={require(`../../Media/images/paystack/Paystack.png`)}/>
+                                                <img  name={i.name} src={require(`../../Media/images/paystack/paystack.png`)}/>
                                             </div>
                                             : i.name === "Flutterwave" 
                                             ? <div key={i.name} className="img-block flutterwave-img">
