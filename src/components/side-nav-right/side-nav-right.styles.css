@@ -239,6 +239,6 @@
 
 @media screen and (max-width:540px){
     #side-nav-right {
-        display: none;
+        /* display: none; */
     }
 }

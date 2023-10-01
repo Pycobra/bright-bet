@@ -4,8 +4,8 @@ import "./league-card-main-item.styles.css";
 import BetslipTableItem from "../betslip-table-item/betslip-table-item.components";
 import { StyledOption4Container, StyledOption4Content } from './league-card-main-item.styled-components';
 import { selectOption4 } from "../../redux/optionHeads/optionHeads.selectors";
-import { CardTypeContext } from "../context/card-type.context";
-import  { LiveBettingDummyOdds }  from "../context/liveBetting.context";
+import { CardTypeContext } from "../../context/card-type.context";
+import  { LiveBettingDummyOdds }  from "../../context/liveBetting.context";
 
 
 

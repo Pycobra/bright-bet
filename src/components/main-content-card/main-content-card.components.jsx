@@ -10,7 +10,7 @@ import {
 } from "../../redux/bet/bet.selectors";
 // import  { LiveBettingDummyPlaceHolder, LiveBettingDummyOdds}  from "../context/liveBetting.context";
 // import { Option3Container } from './main-content-card.styled-components'
-import { CardTypeContext } from "../context/card-type.context";
+import { CardTypeContext } from "../../context/card-type.context";
 import LeagueCardMainItem from "../league-card-main-item/league-card-main-item.components";
 // import { fetchOption4Start } from "../../redux/optionHeads/optionHeads.action";
 

@@ -123,7 +123,6 @@ const PinModal = ({currentUser, removePinModal, paymentDetails}) => {
             item.insertAdjacentHTML('afterbegin', `<span class="msg">invalid pin</span>`)
         }
     }
-    console.log(config)
     useEffect(() => {
         if (Object.keys(config).length){
             removePinModal({target:{className:"cancel"}})

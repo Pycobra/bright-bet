@@ -66,7 +66,6 @@ const Modal = ({login_hidden, bet_frame_hidden, header_dropdown,
                 if (innerwidth <= 768){
                     accBtn = document.querySelector('.h-item__acc.account2')
                 }
-                console.log(accBtn, "accBtn accBtn accBtn")
                 const { left, right, width } =  accBtn.getBoundingClientRect()
                 const halfWidth = width / 2
                 const ModalPosition = left - (width-halfWidth)

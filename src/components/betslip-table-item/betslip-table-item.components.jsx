@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAlignRight } from "@fortawesome/free-solid-svg-icons"
 import { selectSingleClub } from "../../redux/bet/bet.selectors";
 import { StyledOption4Container } from './betslip-table-item.styled-components'
-import { LiveBettingDummyOdds }  from "../context/liveBetting.context";
-import { CardTypeContext } from "../context/card-type.context";
+import { LiveBettingDummyOdds }  from "../../context/liveBetting.context";
+import { CardTypeContext } from "../../context/card-type.context";
 import { fetchUserAccumulatedBetStart } from "../../redux/betAccumulator/betAccumulator.action";
 import { selectOption1, selectOption2, selectOption3, selectOption4 } from "../../redux/optionHeads/optionHeads.selectors";
 import { selectAllAccumulatedBet } from "../../redux/betAccumulator/betAccumulator.selectors";

@@ -20,7 +20,6 @@ const SideNavLeft = () => {
     )
     const [leagueMain, setLeagueActivate] = useState(leagueNames)
     const dispatch = useDispatch()
-    console.log(leagueMain, "leagueMain")
     const time_range = useSelector(selectTimeRange)
     const [timeRangeObject, setTimeRangeObject] = useState(time_range)
     const HandleTimeRangeClick = (e, index) => {

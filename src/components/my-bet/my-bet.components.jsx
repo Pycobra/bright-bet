@@ -50,7 +50,6 @@ const MyBet = ({currentUser, currentUser_bets, errMsg}) => {
 
     useEffect(() => {
         if (errMsg){
-            console.log(errMsg)
             if (errMsg.type==="Network Error"){
                 alert(errMsg.msg)
             }

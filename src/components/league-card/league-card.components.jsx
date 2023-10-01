@@ -13,7 +13,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {  faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import  {Option3Container } from './league-card.styled-components'
-import { CardTypeContext } from "../context/card-type.context";
+import { CardTypeContext } from "../../context/card-type.context";
 import moment from 'moment'
 import { faTimes } from "@fortawesome/free-solid-svg-icons"
 import { removeLeagueStart } from "../../redux/bet/bet.action";
