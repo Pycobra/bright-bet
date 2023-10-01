@@ -30,7 +30,7 @@ const LeagueCardMainItem = ({singleItem, leagueName, leagueId}) => {
                             ? <span className="content-date">{fixtureTime}</span>
                             : <span className="content-date">{leagueName}</span>
                         }
-                        <StyledOption4Container data={option4stateContext} CardType={CardType}>
+                        <StyledOption4Container data={option4stateContext} cardtype={CardType}>
                             {
                                 option4stateContext.length 
                                 ? option4stateContext.map((obj, idx) => 

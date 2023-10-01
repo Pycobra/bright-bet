@@ -18,7 +18,7 @@ import { betFrameHidden } from '../../redux/bet/bet.action';
 
 
 
-const Modal = ({login_hidden, bet_frame_hidden, header_dropdown, 
+const Modal = ({login_hidden, bet_frame_hidden, header_dropdown_list, 
                 registeration_hidden, dropdown_str}) => {
     const dispatch = useDispatch()
     const DestroyModal = e => {
@@ -26,7 +26,7 @@ const Modal = ({login_hidden, bet_frame_hidden, header_dropdown,
         if  (!e.target.closest(".modal-content") || classList.contains("active") 
             || classList.contains("active-b") || classList.contains("fa-xmark")){
             if (login_hidden) dispatch(loginFrameHiddenStart(false))
-            if (header_dropdown.length) dispatch(headerDropDownStart({hidden: false}))
+            if (header_dropdown_list.length) dispatch(headerDropDownStart({hidden: false}))
             if (registeration_hidden) dispatch(registerFrameHiddenStart(false))
             if (bet_frame_hidden) dispatch(betFrameHidden({boolean:false, actionStr:""}))
         }
@@ -50,7 +50,7 @@ const Modal = ({login_hidden, bet_frame_hidden, header_dropdown,
             modal.style.right = "3%"
 
         }
-        if (header_dropdown.length) {
+        if (header_dropdown_list.length) {
             if (dropdown_str === "header-links"){
                 const { left, right, width } =  moreBtn.getBoundingClientRect()
                 const halfWidth = width / 2
@@ -68,7 +68,7 @@ const Modal = ({login_hidden, bet_frame_hidden, header_dropdown,
                 }
                 const { left, right, width } =  accBtn.getBoundingClientRect()
                 const halfWidth = width / 2
-                const ModalPosition = left - (width-halfWidth)
+                const ModalPosition = left - 100
                 modal.style.left = `${ModalPosition}px`
                 modal.style.right = "auto"
                 icon.style.marginRight = "auto"
@@ -89,7 +89,7 @@ const Modal = ({login_hidden, bet_frame_hidden, header_dropdown,
     return (
         <div 
             className={`modal ${
-                login_hidden || header_dropdown.length || registeration_hidden
+                login_hidden || header_dropdown_list.length || registeration_hidden
                 ? 'active' 
                 : bet_frame_hidden
                 ? 'active-b'
@@ -110,8 +110,8 @@ const Modal = ({login_hidden, bet_frame_hidden, header_dropdown,
                     login_hidden ? <Login /> : null
                     }
                     {
-                    header_dropdown.length
-                    ? <DropDown list={header_dropdown} /> 
+                    header_dropdown_list.length
+                    ? <DropDown list={header_dropdown_list} /> 
                     : null
                     }
                     {
@@ -126,7 +126,7 @@ const mapStateToProps = createStructuredSelector({
     bet_frame_hidden: selectBetFrameHidden,
     registeration_hidden: selectRegisterationHidden,
     login_hidden: selectLoginHidden,
-    header_dropdown: selectHeaderDropDown,
+    header_dropdown_list: selectHeaderDropDown,
     dropdown_str: selectHeaderDropdownActiveStr,
   })
 export default connect(mapStateToProps)(Modal);

@@ -17,15 +17,15 @@ import { signOutStart } from "../../redux/user/user.action";
 
 
 const DropDown = ({list, currentUser, header_dropdown, headerDropdownActiveStr}) => {
-    const [listItems, setListItems] = useState(
-        list.filter((i, ind) => 
+    const [listItems, setListItems] = useState([])
+    useEffect(() => {
+        setListItems(list.filter((i, ind) => 
         headerDropdownActiveStr === "header-links"
         ? (window.innerWidth <= 650 ? ind >= 2
             : window.innerWidth <= 768 ? ind >= 3
             : ind >= 4)
-        : list)
-    )
-    
+        : list))
+    },[list])
     useEffect(() => {
         if (headerDropdownActiveStr === "header-links"){
             function reportWindowSize(){

@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 
 
-const handleProp = ({data, CardType}) => {
+const handleProp = ({data, cardtype}) => {
   const list = []
   if (data.length){
     var width = 0
@@ -16,7 +16,7 @@ const handleProp = ({data, CardType}) => {
       width = 30
     }
     data.map(obj => Object.keys(obj).map(str => {
-      if (CardType==="MainContentCard"){
+      if (cardtype==="MainContentCard"){
           list.push(str)
       } else {
         Object.keys(obj[str]).map(i => {
@@ -33,11 +33,11 @@ const handleProp = ({data, CardType}) => {
   }
   return 0
 }
-const handleProp2 = ({data, CardType}) => {
+const handleProp2 = ({data, cardtype}) => {
   if (data.length){
     let list=[]
     data.map(obj => {
-      if (CardType==="MainContentCard"){
+      if (cardtype==="MainContentCard"){
         list.push(Object.keys(obj))
       } else {
         list = Object.keys(obj).map(i => Object.keys(obj[i]))

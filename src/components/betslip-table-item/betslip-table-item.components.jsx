@@ -157,7 +157,7 @@ const BetslipTableItem = ({objDetails, leagueId, leagueName}) => {
                 : null}
             </div>
             <div className="table-item__odd">
-                <StyledOption4Container data={option4stateContext} CardType={CardType} page='betslip-table-item'>
+                <StyledOption4Container data={option4stateContext} cardtype={CardType} page='betslip-table-item'>
                 {
                     GetRandomOdds.length
                     ? GetRandomOdds.map((obj, idx1) => {
