@@ -6,17 +6,20 @@ import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
 import { selectAllAccumulatedBet } from "../../redux/betAccumulator/betAccumulator.selectors";
 import { postBetStart } from "../../redux/bet/bet.action";
-import { selectErrMsg, selectIsFetching3 } from "../../redux/bet/bet.selectors";
+import { selectErrMsg, selectBetActionString, selectIsFetching3 } from "../../redux/bet/bet.selectors";
 import { selectCurrentUser } from "../../redux/user/user.selector";
 import WithSpinner from '../with-button-spinner/with-button-spinner.component';
 import { SpinnerContainer, SpinnerOverlay } from "../with-button-spinner/with-buton-spinner.styled-component.jsx";
 import { checkoutFrameHidden } from "../../redux/checkout/checkout.action";
+import { clearUserAccumulatedBetStart } from "../../redux/betAccumulator/betAccumulator.action";
+
 
 
 
 
 const BookingBetslipFooter = ({}) => {
     const userAccumulatedBet = useSelector(selectAllAccumulatedBet)
+    const betActionString = useSelector(selectBetActionString)
     const currentUser = useSelector(selectCurrentUser)
     const { user_accumulated_bet } = userAccumulatedBet
     const [clickedBetBtn, setClickedBetBtn] = useState(false)
@@ -149,6 +152,14 @@ const BookingBetslipFooter = ({}) => {
             dispatch(loginFrameHiddenStart(true))
         }
     }
+    useEffect(() => {
+        const elem = document.querySelector("#new-element2")
+        if (betActionString && elem) {
+            if (!isFetching && elem.style.display === "grid")
+                elem.style.display = "none" 
+                dispatch(clearUserAccumulatedBetStart())   
+        }
+    }, [isFetching, betActionString])
     return (
         <div className="booking-betslip__footer">
             <div className="booking-betslip__footer__wrap">

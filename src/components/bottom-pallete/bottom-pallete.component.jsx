@@ -11,7 +11,7 @@ import {
     registerFrameHiddenStart, loginFrameHiddenStart,
 } from "../../redux/user/user.action";
 import { selectLoginHidden, selectRegisterationHidden, selectHeaderDropdownActiveStr } from '../../redux/user/user.selector';
-
+import { betFrameHidden } from '../../redux/bet/bet.action';
 
 
 

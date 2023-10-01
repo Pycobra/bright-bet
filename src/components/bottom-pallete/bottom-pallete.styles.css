@@ -49,7 +49,7 @@
 }
 #bottom-pallete .b-p__list {
     display: grid;
-    grid-template-columns: 20% 20% 19% 21% 20%;
+    grid-template-columns: 20% 19.5% 19.5% 22% 20%;
     grid-template-rows: auto;
 }
 #bottom-pallete .b-p__list-item{
