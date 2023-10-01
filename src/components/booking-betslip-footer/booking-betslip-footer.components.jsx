@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./booking-betslip-footer.styles.css";
+import {loginFrameHiddenStart} from "../../redux/user/user.action";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
 import { selectAllAccumulatedBet } from "../../redux/betAccumulator/betAccumulator.selectors";
@@ -138,12 +139,15 @@ const BookingBetslipFooter = ({}) => {
                 user_accumulated_bet
             }
         }
-        if (currentUser && e.target.innerText === 'Place A Bet'){
-            if (totalStake <= currentUser.amount) dispatch(postBetStart(data))
-        }
-        else if (e.target.innerText ===  'Book A Bet'){
+        if (e.target.innerText ===  'Book A Bet'){
             dispatch(postBetStart(data))
+        }
+        else if (currentUser && e.target.innerText === 'Place A Bet'){
+            if (totalStake <= currentUser.amount) dispatch(postBetStart(data))
         } 
+        else if (!currentUser){
+            dispatch(loginFrameHiddenStart(true))
+        }
     }
     return (
         <div className="booking-betslip__footer">
