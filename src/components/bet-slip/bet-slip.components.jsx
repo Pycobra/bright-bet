@@ -43,6 +43,9 @@ const BetSlip = ({}) => {
         } else if (name==='coupon'){
             setCouponID(value)
         }
+        const error = document.querySelectorAll('form span.error')
+        console.log(error, "popopop")
+        Array.from(error).map(i => i.innerText = "")
     }
 
     const errorMsg = useSelector(selectErrMsg)
@@ -126,7 +129,7 @@ const BetSlip = ({}) => {
                                                 elemStr="miniscreen" 
                                                 widthAndHeight="9"  
                                                 borderColor="3px solid var(--green2)" 
-                                                topBorderColor="var(--default)"/>
+                                                topbordercolor="var(--default)"/>
                                             : null
                                         }
                                         <span style={{color:"var(--black)"}}>Book</span>
@@ -156,7 +159,7 @@ const BetSlip = ({}) => {
                                                 elemStr="miniscreen" 
                                                 widthAndHeight="9"  
                                                 borderColor="3px solid var(--green2)" 
-                                                topBorderColor="var(--default)"/>
+                                                topbordercolor="var(--default)"/>
                                             : null
                                         }
                                         <span style={{color:"var(--black)"}}>Check</span>
