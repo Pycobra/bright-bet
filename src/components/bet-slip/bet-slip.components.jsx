@@ -43,9 +43,8 @@ const BetSlip = ({}) => {
         } else if (name==='coupon'){
             setCouponID(value)
         }
-        const error = document.querySelectorAll('form span.error')
-        console.log(error, "popopop")
-        Array.from(error).map(i => i.innerText = "")
+        
+        setFieldError("")
     }
 
     const errorMsg = useSelector(selectErrMsg)
@@ -81,7 +80,7 @@ const BetSlip = ({}) => {
             )
         }
     }, [booking_code_obj])
-
+    console.log(errorMsg, "errorMsg errorMsg errorMsg")
     return (
         <div className="betslip-body">
             <div className="s-nav__item">
