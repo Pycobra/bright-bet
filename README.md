@@ -1,3 +1,25 @@
+### ABOUT THIS WEBSITE
+This a sport bet site, built on React, Redux $ Firebase, on this project i tried to make similar/simulate 
+what its like on most bet sites out there, on this app you can creates an account, fund account, 
+book games or place a real bet, withdraw earning, and view transaction history.
+
+If you book a bet, a code is generated and any user who has the code can access the booked games, 
+while if a user place a bet, a code is also generated, and all your placed bets can be seen in MY BET section.
+
+To fund account, a user must first create a 4 digit code at the SETTINGS section in the dropdown at the header nav,
+this code will be required for both payment $ withdrawal.
+
+A user's can view a breakdown of transction history at the TRANSACTION section on the header nav, and more.
+
+in the future i hope to make this site come alive by consuming real data(league fixture & thier outcome & live scores) 
+from an sport dedicated API since currently this site uses an handwritten json data format, and has no way to decide 
+if a placed bet is won or lost.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
